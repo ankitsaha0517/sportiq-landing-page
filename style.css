@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Monserrat-Bold";
+  src: url("./font/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Monserrat-Medium";
+  src: url("./font/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("./font/Montserrat-Light.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Monserrat-Medium";
+}
+
+/* phone */
+
+#Hero-section {
+  background: url("./hero-img.png");
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+nav .logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+#Hero-section {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+nav ul {
+  display: none;
+}
+nav .dark-light-btn {
+  display: none;
+}
+nav .hamburger-menu i {
+  font-size: 1.2rem;
+}
+
+.second-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 20px;
+  font-family: "Montserrat-Light";
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.second-nav a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.hero-content {
+  padding: 50px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 2rem;
+}
+.hero-content .content-para {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.hero-content .content-para i {
+  padding: 4px 5px;
+  border-radius: 50%;
+  background-color: #eca051;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  #Hero-section {
+    height: 100vh;
+    background-size: cover;
+  }
+  .second-nav {
+    font-size: 0.8rem;
+  }
+  .hero-content {
+    padding: 10vh 0;
+  }
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  .hero-content span {
+    margin-left: 21vw;
+  }
+  .hero-content .content-para {
+    padding: 25px 0;
+    gap: 25px;
+    font-size: 1rem;
+  }
+}
+
+/* DeskTop */
+@media (min-width: 1024px) {
+  #Hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  nav .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 2vw;
+    list-style: none;
+  }
+  nav .dark-light-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    border-radius: 100px;
+    background: #ffffff36;
+  }
+
+  nav .dark-light-btn i {
+    padding: 7px 8px;
+    border-radius: 50%;
+  }
+
+  nav .dark-light-btn .sun {
+    background: #fff;
+    color: #000;
+  }
+
+  nav .hamburger-menu {
+    display: none;
+  }
+  .hero-content h1 {
+    font-size: 6rem;
+  }
+}
