@@ -21,6 +21,7 @@ body {
   width: 100%;
 }
 body {
+  background-color: #f5f6fb;
   font-family: "Monserrat-Medium";
 }
 
@@ -100,6 +101,97 @@ nav .hamburger-menu i {
   background-color: #eca051;
 }
 
+#Benefit-section {
+  padding: 10vh 20px;
+  /* display: flex; */
+}
+.benefit-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.benefit-left .left-top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sm-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sm-heading h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sm-heading .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(14, 120, 162);
+}
+
+.main-heading h1 {
+  font-size: 9vw;
+}
+.main-heading .fristline {
+  display: flex;
+  align-items: center;
+}
+.main-heading .fristline img {
+  width: 20vw;
+}
+
+.tags ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tags ul li {
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-family: "Monserrat-Medium";
+}
+
+.left-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left-bottom-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.left-bottom-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-bottom-heading h3 {
+  font-size: 1rem;
+}
+
+.left-bottom-heading i {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.left-bottom-content p {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 /* tablet */
 @media (min-width: 768px) {
   #Hero-section {
@@ -122,6 +214,14 @@ nav .hamburger-menu i {
     padding: 25px 0;
     gap: 25px;
     font-size: 1rem;
+  }
+  .sm-heading h5 {
+    font-size: 1rem;
+  }
+
+  .left-bottom {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -169,5 +269,25 @@ nav .hamburger-menu i {
   }
   .hero-content h1 {
     font-size: 6rem;
+  }
+
+  #Benefit-section {
+    padding: 10vh 50px;
+  }
+
+  .sm-heading h5 {
+    font-size: 0.8rem;
+  }
+
+  .main-heading h1 {
+    font-size: 5vw;
+  }
+  .main-heading .fristline img {
+    width: 9vw;
+  }
+
+  .left-bottom {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
