@@ -238,7 +238,7 @@ nav .hamburger-menu i {
 .benefit-right .right-second {
   width: 100%;
   height: 400px;
-  background: url("/estimg.png");
+  background: url("./estimg.png");
   background-size: cover;
   background-position: bottom;
   border-radius: 35px;
