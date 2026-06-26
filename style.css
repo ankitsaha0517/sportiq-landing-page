@@ -24,7 +24,9 @@ body {
   background-color: #f5f6fb;
   font-family: "Monserrat-Medium";
 }
-
+.none {
+  display: none !important;
+}
 /* phone */
 
 #Hero-section {
@@ -100,12 +102,14 @@ nav .hamburger-menu i {
   border-radius: 50%;
   background-color: #eca051;
 }
-
+/* section - 2  */
 #Benefit-section {
-  padding: 10vh 20px;
+  padding: 6vh 20px;
   display: flex;
   flex-direction: column;
   gap: 5vh;
+
+  /* display: none; */
 }
 .benefit-left {
   display: flex;
@@ -137,7 +141,7 @@ nav .hamburger-menu i {
 }
 
 .main-heading h1 {
-  font-size: 9vw;
+  font-size: 8vw;
 }
 .main-heading .fristline {
   display: flex;
@@ -158,9 +162,13 @@ nav .hamburger-menu i {
   border-radius: 50px;
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 10px;
   font-family: "Monserrat-Medium";
   font-size: 0.9rem;
+}
+.tags ul li i {
+  font-size: 1rem;
 }
 
 .left-bottom {
@@ -218,6 +226,7 @@ nav .hamburger-menu i {
 
 .right-frist .right-top p {
   padding-top: 15px;
+  opacity: 0.6;
 }
 .Vision-btn {
   margin-top: 15px;
@@ -306,6 +315,98 @@ nav .hamburger-menu i {
 .boost .boost-bottom i {
   font-size: 1.4rem;
 }
+.benefit-right .main-heading h1 {
+  font-size: 7vw;
+}
+
+/* section - 3 */
+#Program-section {
+  padding: 6vh 20px;
+}
+
+.program-section-con {
+  border-radius: 20px;
+  padding: 26px 16px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.program-section-con .sm-heading {
+  margin-left: auto;
+}
+.program-section-con .main-heading .fristline {
+  flex-wrap: wrap;
+  /* gap: 10px; */
+}
+
+.program-section-con .tags ul li {
+  background-color: #f5f6fb;
+}
+
+.program-section-con .program-dec p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.program-section-con .program-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.program-card {
+  width: 100%;
+  height: 300px;
+
+  border-radius: 25px;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.program-card-con {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.program-card h2 {
+  font-size: 5vw;
+  font-weight: 500;
+}
+.program-card img {
+  width: 75px;
+}
+
+.program-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.program-card-foot .live {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.program-card-foot .link {
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: 1px solid white;
+}
+
+.program-bottom .card-2 {
+  display: none;
+}
+.program-countwer {
+  display: none;
+}
 
 /* tablet */
 @media (min-width: 768px) {
@@ -354,6 +455,87 @@ nav .hamburger-menu i {
   /* .right-second .boost {
     width: 70%;
   } */
+
+  /* section -3 */
+  .program-bottom {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .program-card {
+    width: 45%;
+    height: 370px;
+  }
+  .program-card h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .program-bottom .card-2 {
+    display: flex;
+    background: url(./program-2.png);
+    background-position: center;
+    background-size: calc(130%);
+    background-repeat: no-repeat;
+  }
+  .program-card-con {
+    justify-content: space-between;
+  }
+  .glash {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+  .glash:nth-child(2) {
+    padding: 15px;
+  }
+
+  .glash h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .glash-icon {
+    padding: 5px;
+    background: #fff;
+    color: #e2503b;
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
+  .glash p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .card-2 .program-card-foot {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .card-foot-people {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+  }
+  .card-2 .program-card-foot p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .card-2 .program-card-foot h6 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  .card-2 .program-card-foot h4 {
+    font-size: 2rem;
+    font-family: "Montserrat-Light";
+  }
+  .card-2 .copy-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: "Montserrat-Light";
+  }
 }
 
 /* DeskTop */
@@ -453,4 +635,59 @@ nav .hamburger-menu i {
   .benefit-right .right-frist {
     width: 50%;
   }
+  /* ssection - 3 */
+  .program-section-con {
+    gap: 30px;
+    padding: 30px;
+  }
+  .program-section-con .program-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .program-card {
+    width: 36%;
+    height: 400px;
+  }
+  .program-card h2 {
+    font-size: 1.8rem;
+  }
+  .program-countwer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+  }
+  .program-countwer p .high {
+    font-size: 5rem;
+  }
+  .program-countwer p .less {
+    font-size: 2rem;
+    color: #b3b3b5;
+  }
+  .arrow-con{
+    display: flex;
+    gap: 10px;
+  }
+  .arrow{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1px solid #b3b3b5;
+    color: #b3b3b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+  }
+  .arrow i{
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+   .arrow-2nd{
+    border-color: transparent;
+    background: #e2503b;
+    color: #fff;
+   }
 }
