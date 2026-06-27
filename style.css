@@ -433,6 +433,12 @@ nav .hamburger-menu i {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: space-between;
+}
+.featured-con-top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #Featured-section .fristline img {
@@ -625,6 +631,15 @@ nav .hamburger-menu i {
     text-transform: uppercase;
     font-family: "Montserrat-Light";
   }
+  /* section -4 */
+  .featured-con .icons i {
+    padding: 20px 22px;
+    font-size: 1.6rem;
+  }
+  .featured-con .icons {
+    justify-content: start;
+    gap: 18px;
+  }
 }
 
 /* DeskTop */
@@ -778,5 +793,16 @@ nav .hamburger-menu i {
     border-color: transparent;
     background: #e2503b;
     color: #fff;
+  }
+  /* section -4 */
+  #Featured-section {
+    flex-direction: row;
+    gap: 6vw;
+  }
+  .featured-img {
+    width: 46%;
+  }
+  .gpt {
+    gap: 45px;
   }
 }
